@@ -8,27 +8,24 @@
 // Output: false
 // Explanation: From left to right, it reads - 121. From right to left, it becomes 121 - .Therefore, it is not a palindrome.
 
-let number = 1331;
+let number = 13311;
 
-function palindrome() {
+function palindrome(number) {
 
-    let splitNum = number.toString().split("");
+    let stringValue = number.toString(); // "1331"
 
-    let newArr = [];
+    let splitNum = stringValue.split("");
 
-    for (let i = 0; i < splitStr.length; i++) {
-        let stringReverse = splitStr
-            .reverse()
-            .join("");
-        newArr.push(stringReverse);
-    }
+    let stringReverse = splitNum
+        .reverse()
+        .join("");
 
-    let finalStr = parseInt(newArr.join(""));
+    // let finalStr = parseInt(newArr.join(""));
 
-    if (splitNum === finalStr) {
-        return true
+    if (stringValue === stringReverse) {
+        console.log(true);
     } else
-        return "This is not a palindrome"
+        console.log("This is not a palindrome");
 }
 
 palindrome(number);
