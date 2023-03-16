@@ -25,4 +25,4 @@ function cc(card) {
     }
 
 }
-cc(8);
+cc(5);
